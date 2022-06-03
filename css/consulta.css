@@ -1,0 +1,14 @@
+.row .primertitulo2{
+   /*  color: red; */
+    text-align: center;
+   font-size: 2em;
+   font-family: 'Roboto', sans-serif;
+}
+.principal{
+    width: 80%;
+    margin: 0 auto;
+}
+.box1{
+    font-size: 1.3em;
+   /*  color: red; */
+}

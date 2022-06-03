@@ -1,0 +1,16 @@
+.tituliPrincipal{
+  /* color: red; */
+  font-size: 3em;
+  text-align: center;
+}
+.formulario_principal{
+  width: 60%;
+  margin: 0 auto;
+}
+.form-control{
+  width: 100%;
+}
+.registra{
+  background: #FBB03B;
+  width: 600px;
+}

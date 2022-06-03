@@ -1,0 +1,18 @@
+.usuario{
+    color: #FBB03B;
+}
+.cancelar{
+    color: rgb(255, 132, 2);
+}
+.formprincipal{
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+    /* background: red; */
+}
+h3{
+    font-size: 1.5em;
+}
+.btn-danger{
+    background:#FBB03B ;
+}
