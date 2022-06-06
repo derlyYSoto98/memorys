@@ -131,10 +131,14 @@
      .mean-container .mean-nav ul li a.mean-expand {
          top: 0;
     }
-    /* .text-bg p {
-        color: #fd0e2e;
-        
-   } */
+    .about .about-box {
+       /*  text-align: left;
+        float: right;
+        width: 100%;
+        max-width: 539px;*/
+        padding: 5px 0; 
+           /*  background: red; */
+        }
    
  
 
@@ -313,7 +317,7 @@ max-width: 71px;
 }
 
 .about .about-box h2 { font-size: 34px; }
-.about .about-box p {padding: 20px 0px; font-size: 16px; line-height: 25px;}
+.about .about-box p {padding: 10px 0px; font-size: 16px; line-height: 5px;}
 .about .about-box::after {position: inherit;}
 .titlepage h2 {line-height: 40px; font-size: 31px;}
 .vegetable_shop h3 { font-size: 25px; }

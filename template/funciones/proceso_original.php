@@ -1,5 +1,5 @@
 <?php
-include '../template/conexion.php';
+include '../conexion.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +15,7 @@ include '../template/conexion.php';
   <title>Memorys cafe / proceso</title>
   
   <h1>CONSULTA QR</h1>
-   <form action="" name="form1" method="POST" enctype="multipart/form-data" class="formulario_principal">
-                <fieldset id="informacionproceso">
+
                     <legend>Informacion del proceso</legend>
                           <div class="form-group">
                                 <label>Usario:</label>
@@ -34,19 +33,21 @@ include '../template/conexion.php';
                                 <select name="idvariead" id="idvariead" class="form-control">
                                 </select>
                             </div> 
+
+                    <form action="consulta_qr2.php" method="GET" >
                             <div class="form-group">
-                                <label>Variedad:</label>
-                                <select name="proceso" id="proceso" class="form-control">
+                                <label>Proceso:</label>
+                                <select name="idproceso" id="idproceso" class="form-control">
                               </select>
                             </div> 
-                    </fieldset>
-                    </div>
-                <br>
-                <input type="submit" id="botonReg" name="botonReg" value="Registrar" class="btn btn-success form-control">  
+                      </div>
+                   <input type="submit" id="proceso" name="proceso" value="Generar" class="btn btn-success form-control"> 
+                 </form>  
+                 
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                 <script src="js/proceso.js"></script>
-   </form>
+  
 </body>
 </html>
    

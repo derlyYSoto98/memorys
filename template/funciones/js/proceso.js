@@ -7,7 +7,7 @@ $(document).ready(function(){
     })
     .done(function(usuarios_asociados){
         $('#idusuario').html(usuarios_asociados)
-        //console.log(fincas_asociadas)
+        
     })
     .fail(function(){
         alert('Hubo un error al cargar las fincas')
@@ -24,10 +24,10 @@ $(document).ready(function(){
             url: 'modules/fincas_var.php',
             data: {'id': id}
         })
-        .done(function(usuarios_asociados){
-            $('#idfinca').html(usuarios_asociados)
+        .done(function(finca_asociados){
+            $('#idfinca').html(finca_asociados)
 
-            console.log(usuarios_asociados) 
+            /* console.log(usuarios_asociados) */ 
         })
         .fail(function(){
             alert('Hubo un error al cargar las fincas')
@@ -52,5 +52,24 @@ $(document).ready(function(){
         }) 
     })
 
+
+
+
+    $('#idvariead').on('change', function(){
+        var id3 = $('#idvariead').val(); 
+        /* console.log (id); */
+      $.ajax({
+            type: 'POST',
+            url: 'modules/proceso_var.php',
+            data: {'id3': id3}
+        })
+        .done(function(proceso_asociados){
+            $('#idproceso').html(proceso_asociados)
+            /* console.log(usuarios_asociados)  */
+        })
+        .fail(function(){
+            alert('Hubo un error al cargar el proceso')
+        }) 
+    })
 
 })
