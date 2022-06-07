@@ -29,7 +29,7 @@
      font-weight: normal;
      overflow-x: hidden; */
      /* background-color: red; */
-     background: url(../images/fondo6.jpg);
+     background: url(../images/fondo8.jpg);
      background-repeat: repeat;
      width: 100%;
 }
@@ -1490,7 +1490,7 @@ transition: all 0.3s ease-in;
 
 /** footer **/
  .footer {
-     background: #3b3b3b;
+     background: #1D0000;
    
      padding-top: 60px;
 }
