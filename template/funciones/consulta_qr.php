@@ -163,7 +163,7 @@ include '../conexion.php';
                                   <label>Proceso:</label>
                                   <select name="idproceso" id="idproceso" class="form-control">
                                 </select>
-                              </div> 
+                              </div> <br>
                               <div class="form-group">
                               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
                           </div>   

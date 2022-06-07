@@ -2,9 +2,10 @@
 if(isset($_POST) && !empty($_POST)) {
     include('phpqrcode/qrlib.php'); 
     include('../conexion.php');
-    $codesDir = "codigos/";   
-    $codeFile = date('d-m-Y-h-i-s').'.png';
     $dato=$_POST['formData'];
+    $codesDir = "codigos/";   
+    $codeFile = $dato.date('d-m-Y-h-i-s').'.png';
+    
     //consulta SQL
     try {
         $consultar = "SELECT * /* foto_usuario,cedula_usuario,nombre_usuario,direccion_usuario,telefono_usuario, nombre_finca, ubicacion_finca, altitud_finca, foto_finca,
@@ -22,11 +23,12 @@ if(isset($_POST) && !empty($_POST)) {
         die ('ALERTA!!! Error al ejecutar la busqueda.... ' . $e-> getMessage () );
         }
         
+    QRcode::png('ID'.'-'.$dato."\n".'Caficultor: '.$caficultor."\n". 'Finca: '.$finca."\n".'Variedad:'. $variedad."\n".'Proceso: '.$proceso, $codesDir.$codeFile, 'H', 7); 
+    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />'; 
 
-    QRcode::png($dato. 'Caficultor: '.$caficultor.'-'. $finca. $variedad. $proceso, $codesDir.$codeFile, 'H', 10); 
-    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
-   // echo '<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fwww.google.com%2F&choe=UTF-8" title="Link to Google.com" />';
+   //echo '<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fwww.youtube.com/watch?v=USDX0X-d588%2F&choe=UTF-8" title="Link to Google.com" />';
 } else {
     header('location:./');
 }
 ?>
+

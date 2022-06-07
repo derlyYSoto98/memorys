@@ -97,10 +97,10 @@ include '../conexion.php';
               ?>
    <section class="slider_section">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+        <ol class="carousel-indicators carusel" >
+          <li data-target="#myCarousel"  data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel"   data-slide-to="1"></li>
+          <li data-target="#myCarousel"  data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -114,14 +114,14 @@ include '../conexion.php';
                       <h1>Memorys Café</h1>
                       <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
                      <div class="Vegetable">
-                       <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p>
-                     </div>
-                     <p>............................................</p>
+                       <!-- <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
+                       </div>
+                      <!--  <p>............................................</p> -->
                     </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8">
                     <div class="images_box">
-                      <figure><img src="images/cafe3.png" ></figure>
+                      <figure><img src="" ></figure>
                     </div>
                   </div>
                 </div>
@@ -140,14 +140,14 @@ include '../conexion.php';
                       <h1>Memorys Café</h1>
                       <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
                       <div class="Vegetable">
-                       <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p>
+                       <!-- <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
                      </div>
-                     <p>............................................</p>
+                    <!--  <p>............................................</p> -->
                     </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/cafe1.png"></figure>
+                      <figure><img src=""></figure>
                     </div>
                   </div>
                 </div>
@@ -168,14 +168,14 @@ include '../conexion.php';
                       <h1>Memorys Café</h1>
                       <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
                         <div class="Vegetable">
-                          <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p>
+                         <!--  <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
                       </div>
-                      <p>............................................</p>
+                    <!--   <p>............................................</p> -->
                     </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/cafe2.png"></figure>
+                      <figure><img src=""></figure>
                     </div>
                   </div>
                 </div>
@@ -205,12 +205,12 @@ include '../conexion.php';
 <div id="about" class="about">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 usuarios">
         <div class="about-box">
           <h2>Usuario</h2> 
                     <p class="box2">Caficultor:  <?php echo $respuesta['nombre_usuario'];?></p>
                     <p class="box2">Dirección:  <?php echo $respuesta['direccion_usuario'];?></p>
-                    <p class="box2">Teefono: <?php echo $respuesta['telefono_usuario'];?></p>
+                    <p class="box2">Telefono: <?php echo $respuesta['telefono_usuario'];?></p>
           <!-- <a href="Javascript:void(0)">Read more</a> -->
         </div>
       </div>
@@ -232,10 +232,10 @@ include '../conexion.php';
           <figure><img src="../fotografiaFinca/<?=$respuesta['foto_finca']?>" title="<?=$respuesta['foto_finca']?>" ></figure>
         </div>
       </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 usuarios" >
         <div class="about-box">
           <h2>Finca</h2> 
-                    <p class="box2">Nombre de la Finca: <?php echo $respuesta['nombre_finca'];?></p>
+                    <p class="box2">Finca: <?php echo $respuesta['nombre_finca'];?></p>
                     <p class="box2">Ubicación: <?php echo $respuesta['ubicacion_finca'];?></p>
                     <p class="box2">Altitud: <?php echo $respuesta['altitud_finca'];?></p>
           <!-- <a href="Javascript:void(0)">Read more</a> -->
@@ -286,11 +286,11 @@ include '../conexion.php';
 <div id="about" class="about">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 usuarios">
         <div class="about-box">
           <h2>VARIEDAD</h2> 
-                <p>Nombre variedad: <?php echo $respuesta['nombre_variedad']?></p> 
-                <p>Descripción: <?php echo $respuesta['descripcion_var']?></p> 
+                <p>Variedad: <?php echo $respuesta['nombre_variedad']?></p> 
+                <p class="descri">Descripción: <?php echo $respuesta['descripcion_var']?></p> 
           <!-- <a href="Javascript:void(0)">Read more</a> -->
         </div>
       </div>
@@ -312,7 +312,7 @@ include '../conexion.php';
           <figure><img src="../fotografiaProceso/<?=$respuesta['foto_proceso']?>" title="<?=$respuesta['foto_proceso']?>" width="100" height="100"></figure>
         </div>
       </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 usuarios">
         <div class="about-box">
           <h2>PROCESO</h2> 
                 <p>Proceso: <?php echo $respuesta['nombre_proceso']?></p>
@@ -362,8 +362,8 @@ include '../conexion.php';
                                 <div class="row">
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
                                         <div class="testomonial_img">
-                                            <figure><img src="images/cafe.jpg" alt="#"/></figure>
-                                            <i><img src="images/cafe.png" alt="#"/></i>
+                                            <figure><img src="images/tasa3.jpg" alt="#"/></figure>
+                                            <!-- <i><img src="images/cafe.png" alt="#"/></i> -->
                                         </div>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
@@ -390,7 +390,7 @@ include '../conexion.php';
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
                                         <div class="testomonial_img">
                                             <figure><img src="images/cafe.jpg" alt="#"/></figure>
-                                            <i><img src="images/test_con.png" alt="#"/></i>
+                                            <!-- <i><img src="images/cafe4.jpg" alt="#"/></i> -->
                                         </div>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
@@ -417,8 +417,8 @@ include '../conexion.php';
                                 <div class="row">
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
                                         <div class="testomonial_img">
-                                            <figure><img src="images/tes.jpg" alt="#"/></figure>
-                                            <i><img src="images/test_con.png" alt="#"/></i>
+                                            <figure><img src="images/cafe4.jpg" alt="#"/></figure>
+                                           <!--  <i><img src="images/cafe4.jpg" alt="#"/></i> -->
                                         </div>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
@@ -447,6 +447,7 @@ include '../conexion.php';
 
 
 <!-- contact -->
+<!-- contact -->
 <div id="contact" class="contact">
   <div class="container">
    <div class="row">
@@ -459,14 +460,22 @@ include '../conexion.php';
 </div>
     <div class="white_color">
       <div class="row">
-       <img src="images/cafe1.png"> <label for="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, aliquam ipsa sint voluptatum iure, porro provident eligendi sapiente maiores harum unde suscipit, fugit dolor et consequatur totam tenetur vero reiciendis nesciunt modi. Illo mollitia aliquam, illum possimus labore fugiat exercitationem cum rerum numquam doloremque. Molestiae, architecto quisquam nihil rerum est aspernatur nobis consectetur atque qui possimus itaque id, commodi veritatis aut perspiciatis iusto, at nemo iure culpa dolor voluptatum! Fugiat perferendis consequatur sed quibusdam, id odit nobis totam</label>
+ 
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <img src="images/co-removebg-preview.png" alt="ghfgh">  
+        </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div id="ma">
+             <label >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorem repellat ullam omnis, quisquam quis temporibus a, itaque officia corporis dolorum illum accusamus voluptatem </label>
+          </div>
+          </div>
+          </div>
+          </div>
+
       </div>
     </div>
 </div>
 </div>
-                  
-
-
 
               <?php
             }
@@ -493,11 +502,13 @@ include '../conexion.php';
              <a href="#" class="logo_footer"> <img src="images/logo1.png" width="80" alt="#"/></a>
             </div> -->
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-              <div class="row">
+              <div class="row pie">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
                   <div class="address">
+                      <ul class="loca" >
                     <h3>Memorys Cafe  </h3>
-                       <ul class="loca" >
+                     
+
                             <li><i class="fa-solid fa-phone" style="padding:5px;"></i> 310 23407529</li> 
                             <li><i class="fa-solid fa-location-dot" style="padding:5px;"></i>Origen café: Suaza / Acevedo - Huila</li> 
                             <li><i class="fa-solid fa-building-circle-arrow-right" style="padding:5px;"></i> Oficinas: Medellín - Antioquia</li>   
@@ -507,8 +518,10 @@ include '../conexion.php';
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="address">
+                          <ul class="Menu_footer"> 
                           <h3>Social Link</h3>
-                          <ul class="Menu_footer">
+
+                         
                             <li class="active"> <a href="#">Youtube</a> </li>
                             <li><a href="#">Facebook</a> </li>
                             <li><a href="#">Instagram</a> </li>
@@ -518,11 +531,9 @@ include '../conexion.php';
                       </div>
                      
 
-                      <div class="col-lg-4 col-md-6 col-sm-6 ">
+                      <div class="col-lg-4 col-md-6 col-sm-6 hoja">
                         <div class="address">
-                            
-                            <img src="images/hoja.png" width="100%" alt="#" />
-                            
+                            <img src="images/hoja.png" width="100%" alt="#" class="hoja" />   
                         </div>
                       </div>
                     </div>

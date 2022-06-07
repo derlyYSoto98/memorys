@@ -67,6 +67,7 @@
                       <li> <a href="proceso.php">Proceso</a> </li>
                       <li> <a href="funciones/consulta_general.php">Consulta General</a> </li>
                       <li> <a href="funciones/consulta_qr.php">Consulta QR</a> </li>
+                      <li> <a href="funciones/consulta_qrvista.php">Consulta QR vista</a> </li>
                       <li class="active"><a href="index.html">Cerrar Sesion</a> </li>
                      <!-- <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li> -->
                      </ul>
