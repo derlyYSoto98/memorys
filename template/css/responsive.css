@@ -100,8 +100,9 @@
      .mean-container .mean-nav ul li a {
          padding: 1em 4%;
          width: 92%;
+        /*  background-color: #43960f; */
     }
-      .mean-container .mean-nav ul li a:hover {color: #43960f;}
+     .mean-container .mean-nav ul li a:hover {background-color: #43960f;}
      .mean-container .mean-nav ul li li a {
          width: 90%;
          padding: 1em 5%;

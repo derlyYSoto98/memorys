@@ -112,7 +112,7 @@ include '../conexion.php';
                     <div class="text-bg">
                     <span>¡Bienvenido!</span>
                       <h1>Memorys Café</h1>
-                      <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
+                      <p>“El café me hace invencible. Sin embargo, cuando la taza está vacía, vuelvo a ser un simple mortal”. (Terri Guillemets). </p>
                      <div class="Vegetable">
                        <!-- <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
                        </div>
@@ -138,7 +138,7 @@ include '../conexion.php';
                     <div class="text-bg">
                     <span>¡Bienvenido!</span>
                       <h1>Memorys Café</h1>
-                      <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
+                      <p>“Sin mi café de la mañana, soy sólo como una pieza dorada y seca de carnero”. (Johann Sebastian Bach) </p>
                       <div class="Vegetable">
                        <!-- <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
                      </div>
@@ -166,7 +166,8 @@ include '../conexion.php';
                     <div class="text-bg">
                     <span>¡Bienvenido!</span>
                       <h1>Memorys Café</h1>
-                      <p>Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores… La mayoría de ellos le han dedicado una frase a su mayor aliado, el café. </p>
+                      <p>“Lo más interesante en la historia del café es que donde quiera que ha sido introducido ha engendrado revoluciones. Es la bebida más radical, cuya función siempre ha sido la de incitar al pueblo a pensar”. (W.K. Ukers)
+                     </p>
                         <div class="Vegetable">
                          <!--  <p>La vida es como una taza de café. Todo está en cómo la preparas, pero sobre todo en cómo la tomas.</p> -->
                       </div>
@@ -368,9 +369,8 @@ include '../conexion.php';
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
                                         <div class="cross_inner">
-                                            <h3>Jomono<br><strong class="ornage_color">review</strong></h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
-                                          
+                                            <!-- <h3>Jomono<br><strong class="ornage_color">review</strong></h3> -->
+                                            <p>“En realidad, esta parece ser una necesidad básica del corazón humano en casi toda crisis importante: una buena taza de café caliente”. (Rey Alejandro I de Yugoslavia)
                                             </p>
 
                                         </div>
@@ -395,8 +395,8 @@ include '../conexion.php';
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
                                         <div class="cross_inner">
-                                            <h3>Jomono<br><strong class="ornage_color">review</strong></h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
+                                            <!-- <h3>Jomono<br><strong class="ornage_color">review</strong></h3> -->
+                                            <p>“No hay nada triste en una mañana preciosa que mirar hacia abajo y darse cuenta de que acaba de tener el último sorbo de café y la taza se siente indiferente y vacía”. (Terri Guillemets)
                                               
                                             </p>
 
@@ -423,8 +423,8 @@ include '../conexion.php';
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
                                         <div class="cross_inner">
-                                            <h3>Jomono<br><strong class="ornage_color">review</strong></h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
+                                            <!-- <h3>Jomono<br><strong class="ornage_color">review</strong></h3> -->
+                                            <p>I  Como alguien dijo una vez, una taza de café está llena de ideas. Y sino que les pregunten a filósofos, músicos, artistas, políticos, escritores…
                                               
                                             </p>
 
@@ -466,7 +466,7 @@ include '../conexion.php';
         </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
           <div id="ma">
-             <label >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorem repellat ullam omnis, quisquam quis temporibus a, itaque officia corporis dolorum illum accusamus voluptatem </label>
+             <label >Es posible que la ciencia nunca presente un mejor sistema de comunicación en la oficina que el descanso para tomar café. – Earl Wilson (columnista)</label>
           </div>
           </div>
           </div>

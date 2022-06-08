@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-06-2022 a las 22:20:32
+-- Tiempo de generación: 08-06-2022 a las 14:59:44
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -45,7 +45,8 @@ INSERT INTO `finca` (`id_finca`, `nombre_finca`, `ubicacion_finca`, `altitud_fin
 (3, 'La loma alta', 'San Isidro', '350 m.s.n.m', 'Copia de Church - Hecho con PosterMyWall.jpg', '../fotografiaFinca/Copia de Church - Hecho con PosterMyWall.jpg', 83238658),
 (12, 'polo', 'acevedo', '234m.s.n.m', '23518d84-5716-4996-8768-bd68dad260f5.jpg', '../fotografiaFinca/23518d84-5716-4996-8768-bd68dad260f5.jpg', 1800117711),
 (13, 'Maximos', 'Bogota ', '234m.s.n.m', 'group-of-people-raise-their-hands-on-stadium-976866.jpg', '../fotografiaFinca/group-of-people-raise-their-hands-on-stadium-976866.jpg', 83238658),
-(14, 'Muchois ', 'Gigante - Huila', '234m.s.n.m', 'WhatsApp Image 2022-06-01 at 2.33.22 PM.jpeg', '../fotografiaFinca/WhatsApp Image 2022-06-01 at 2.33.22 PM.jpeg', 999999999);
+(14, 'Muchois ', 'Gigante - Huila', '234m.s.n.m', 'WhatsApp Image 2022-06-01 at 2.33.22 PM.jpeg', '../fotografiaFinca/WhatsApp Image 2022-06-01 at 2.33.22 PM.jpeg', 999999999),
+(16, 'El Cielo', 'Altamira Huila', '250 m.s.n.m', 'Colombia_fincas.jpg', 'fotografiaFinca/Colombia_fincas.jpg', 1075272185);
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,8 @@ CREATE TABLE `proceso` (
 INSERT INTO `proceso` (`id_proceso`, `nombre_proceso`, `tipo_fer`, `fragancia_proceso`, `sabor_proceso`, `acidez_proceso`, `cuerpo_proceso`, `id_variedad`, `foto_proceso`, `ruta_proceso`) VALUES
 (3, 'Fermentación', 'Principal', 'Vainilla4', 'Bicho', 'Baja3', 'Excelente', 3, 'descarga.png', '../fotografiaProceso/descarga.png'),
 (12, 'Sembrado', 'Secundario', 'Vanilla', 'Dulce', 'Media', 'Completo4', 14, 'jovenes-cristianos.jpg', 'fotografiaProceso/jovenes-cristianos.jpg'),
-(13, 'Empacado', 'Medio mas', 'Mojo', 'Amargo', 'Baja', 'termina', 12, 'WhatsApp Image 2022-04-13 at 9.21.52 PM.jpeg', '../fotografiaProceso/WhatsApp Image 2022-04-13 at 9.21.52 PM.jpeg');
+(13, 'Empacado', 'Medio mas', 'Mojo', 'Amargo', 'Baja', 'termina', 12, 'WhatsApp Image 2022-04-13 at 9.21.52 PM.jpeg', '../fotografiaProceso/WhatsApp Image 2022-04-13 at 9.21.52 PM.jpeg'),
+(14, 'Fermentacion', 'Principal', 'Vainilla', 'Miel', 'Baja', 'Completo', 18, 'AdobeStock_107692926_Preview.jpeg', 'fotografiaProceso/AdobeStock_107692926_Preview.jpeg');
 
 -- --------------------------------------------------------
 
@@ -98,6 +100,7 @@ INSERT INTO `usuario` (`cedula_usuario`, `nombre_usuario`, `direccion_usuario`, 
 (767676, 'Carba Campos', 'Altamira- Huila', '8787654', 'caficultor - copia.jpeg', '../fotografiaUsuario/caficultor - copia.jpeg'),
 (83238658, 'Daniel Diaz', 'Suaza - Huila', '980709', 'proceso.jpg', '../fotografiaUsuario/proceso.jpg'),
 (999999999, 'Carla Gomzales', 'Altamira- Huila', '00876543', 'cual-es-el-simbolo-mas-utilizado-en-las-banderas-nacionales.jpg', '../fotografiaUsuario/cual-es-el-simbolo-mas-utilizado-en-las-banderas-nacionales.jpg'),
+(1075272185, 'Diana Marcela Tello', 'Calle 19 Sur', '3188382142', 'ella.jpg', 'fotografiaUsuario/ella.jpg'),
 (1800117711, 'Carlos Gomez', 'Salado Blanco', '33333336666', 'group-of-people-raise-their-hands-on-stadium-976866.jpg', '../fotografiaUsuario/group-of-people-raise-their-hands-on-stadium-976866.jpg');
 
 -- --------------------------------------------------------
@@ -125,7 +128,8 @@ INSERT INTO `variedad` (`id_variedad`, `nombre_variedad`, `descripcion_var`, `fo
 (13, 'Caturra', 'buen cafe', 'jovenes-cristianos.jpg', '../fotografiaVariedad/jovenes-cristianos.jpg', 12),
 (14, 'Rarisimo', 'Cafe de alta calidad grrrr', 'Copia de Church - Hecho con PosterMyWall.jpg', 'fotografiaVariedad/Copia de Church - Hecho con PosterMyWall.jpg', 3),
 (16, 'comun34', 'buen cafe yes', 'descarga.png', '../fotografiaVariedad/descarga.png', 13),
-(17, 'comun', 'cafe chusco', 'WhatsApp Image 2022-04-25 at 3.47.30 PM.jpeg', 'fotografiaVariedad/WhatsApp Image 2022-04-25 at 3.47.30 PM.jpeg', 13);
+(17, 'comun', 'cafe chusco', 'WhatsApp Image 2022-04-25 at 3.47.30 PM.jpeg', 'fotografiaVariedad/WhatsApp Image 2022-04-25 at 3.47.30 PM.jpeg', 13),
+(18, 'Caturra', 'Cafe de calidad', 'cafe.jpg', 'fotografiaVariedad/cafe.jpg', 16);
 
 --
 -- Índices para tablas volcadas
@@ -166,13 +170,13 @@ ALTER TABLE `variedad`
 -- AUTO_INCREMENT de la tabla `finca`
 --
 ALTER TABLE `finca`
-  MODIFY `id_finca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_finca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `proceso`
 --
 ALTER TABLE `proceso`
-  MODIFY `id_proceso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_proceso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
@@ -184,7 +188,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `variedad`
 --
 ALTER TABLE `variedad`
-  MODIFY `id_variedad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_variedad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Restricciones para tablas volcadas
