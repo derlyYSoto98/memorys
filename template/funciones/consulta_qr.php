@@ -166,6 +166,9 @@ include '../conexion.php';
                               </div> <br>
                               <div class="form-group">
                               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
+                          </div>  <br>
+                          <div class="form-group">
+                              <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR pdf">
                           </div>   
                  </form> 
                  <div class="col-md-6">

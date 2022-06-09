@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-06-2022 a las 14:59:44
+-- Tiempo de generación: 09-06-2022 a las 16:41:00
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cafe_proyecto`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `administrador`
+--
+
+CREATE TABLE `administrador` (
+  `id_administrador` int(11) NOT NULL,
+  `usuario_ad` varchar(10) NOT NULL,
+  `contra_ad` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `administrador`
+--
+
+INSERT INTO `administrador` (`id_administrador`, `usuario_ad`, `contra_ad`) VALUES
+(1, 'admin12', '12345');
 
 -- --------------------------------------------------------
 
@@ -100,6 +119,7 @@ INSERT INTO `usuario` (`cedula_usuario`, `nombre_usuario`, `direccion_usuario`, 
 (767676, 'Carba Campos', 'Altamira- Huila', '8787654', 'caficultor - copia.jpeg', '../fotografiaUsuario/caficultor - copia.jpeg'),
 (83238658, 'Daniel Diaz', 'Suaza - Huila', '980709', 'proceso.jpg', '../fotografiaUsuario/proceso.jpg'),
 (999999999, 'Carla Gomzales', 'Altamira- Huila', '00876543', 'cual-es-el-simbolo-mas-utilizado-en-las-banderas-nacionales.jpg', '../fotografiaUsuario/cual-es-el-simbolo-mas-utilizado-en-las-banderas-nacionales.jpg'),
+(1004159103, 'David Diaz', 'Suaza - Huila', '3212952396', '1.jpeg', 'fotografiaUsuario/1.jpeg'),
 (1075272185, 'Diana Marcela Tello', 'Calle 19 Sur', '3188382142', 'ella.jpg', 'fotografiaUsuario/ella.jpg'),
 (1800117711, 'Carlos Gomez', 'Salado Blanco', '33333336666', 'group-of-people-raise-their-hands-on-stadium-976866.jpg', '../fotografiaUsuario/group-of-people-raise-their-hands-on-stadium-976866.jpg');
 
@@ -136,6 +156,12 @@ INSERT INTO `variedad` (`id_variedad`, `nombre_variedad`, `descripcion_var`, `fo
 --
 
 --
+-- Indices de la tabla `administrador`
+--
+ALTER TABLE `administrador`
+  ADD PRIMARY KEY (`id_administrador`);
+
+--
 -- Indices de la tabla `finca`
 --
 ALTER TABLE `finca`
@@ -165,6 +191,12 @@ ALTER TABLE `variedad`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `administrador`
+--
+ALTER TABLE `administrador`
+  MODIFY `id_administrador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `finca`
