@@ -19,6 +19,7 @@ include '../conexion.php';
   <link href="../css/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href="../../css/general.css"> 
+  <link rel="stylesheet" href="../../css/qr_modal.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -167,12 +168,13 @@ include '../conexion.php';
                               <div class="form-group">
                               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
                           </div>  <br>
-                          <div class="form-group">
+                         <!--  <div class="form-group">
                               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR pdf">
-                          </div>   
+                          </div -->   
                  </form> 
-                 <div class="col-md-6">
-                    <div class="showQRCode"></div>
+
+                
+                    
                 </div> 
                  
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -281,6 +283,13 @@ include '../conexion.php';
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
   <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
+               
+               <div class="mensaje_modal" id="mensaje_modal">
+                    <div id="mensaje" class="mensaje mensaje-close">
+                      <div class="showQRCode"></div>
+                   </div>     
+               </div>    
 </body>
+<script src=""></script>
 
 </html>

@@ -24,7 +24,8 @@ if(isset($_POST) && !empty($_POST)) {
         }
         
     QRcode::png('ID'.'-'.$dato."\n".'Caficultor: '.$caficultor."\n". 'Finca: '.$finca."\n".'Variedad:'. $variedad."\n".'Proceso: '.$proceso, $codesDir.$codeFile, 'H', 7); 
-    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />'; 
+    echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
+    echo '<a href="descarga.php?path='.$codesDir.$codeFile.'">Guardar Imagen</a>';
 
    //echo '<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fwww.youtube.com/watch?v=USDX0X-d588%2F&choe=UTF-8" title="Link to Google.com" />';
 } else {
