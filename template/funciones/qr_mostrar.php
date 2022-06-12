@@ -19,17 +19,17 @@ if(isset($_POST) && !empty($_POST)) {
            $variedad = $respuesta['nombre_variedad'];
            $proceso = $respuesta['nombre_proceso'];
        }
-        }  catch (Exception $e) {
-        die ('ALERTA!!! Error al ejecutar la busqueda.... ' . $e-> getMessage () );
+    }  catch (Exception $e) {
+        die ('ALERTA!!! Error al ejecutar la busqueda.... ' . $e-> getMessage ());
         }
-        
-    QRcode::png('ID'.'-'.$dato."\n".'Caficultor: '.$caficultor."\n". 'Finca: '.$finca."\n".'Variedad:'. $variedad."\n".'Proceso: '.$proceso, $codesDir.$codeFile, 'H', 7); 
+    
+        QRcode::png('ID'.'-'.$dato."\n".'Caficultor: '.$caficultor."\n". 'Finca: '.$finca."\n".'Variedad:'. $variedad."\n".'Proceso: '.$proceso, $codesDir.$codeFile, 'H', 7); 
     echo '<img class="img-thumbnail" src="'.$codesDir.$codeFile.'" />';
     echo '<a href="descarga.php?path='.$codesDir.$codeFile.'">Guardar Imagen</a>';
 
    //echo '<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fwww.youtube.com/watch?v=USDX0X-d588%2F&choe=UTF-8" title="Link to Google.com" />';
-} else {
-    header('location:./');
-}
+    } else {
+        header('location:./');
+    }
 ?>
 
